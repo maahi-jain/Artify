@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artify</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="./assets/grid-container.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="header">
+        <h1>Artify</h1>
+        <button id="fav">
+          <i class="fas fa-heart"></i>
+          Favourites
+        </button>
+      </div>
+    </nav>
+    <div id="spinner"></div>
+    <div id="error-popup" class="popup">
+      <div class="popup-content">
+          <h2>Error!</h2>
+          <img src="./assets/error-image.png" class="error-image" alt="error image" />
+          <p>Oops! Something went wrong. Please try again.</p>
+          <button id="error-button">OK</button>
+      </div>
+  </div>
+    <div id="content">
+      <div class="buttons">
+        <button id="back-btn" class="btn">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button id="home-btn" class="btn">
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="image-gallery">
+        <div id="category-list">
+          <div>Wildlife</div>
+          <div>Classic</div>
+          <div>Creative</div>
+          <div>Pottery</div>
+          <div>Cat</div>
+          <div>Scenery</div>
+          <div>Modern Art</div>
+          <div>Sculptures</div>
+          <div>Forest</div>
+        </div>
+        <div id="image-container"></div>
+        <div id="paginator">
+          <button id="prev-page" class="btn">&lt;</button>
+          <span id="on-page" ></span>/<span id="total-page"></span>
+          <button id="next-page" class="btn">&gt;</button>
+        </div>
+      </div>
+      <div id="image-details"></div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
